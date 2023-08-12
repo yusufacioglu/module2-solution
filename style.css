@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(200, 195, 195);
+}
+
+/*Our Menu Title*/
+h1 {
+    margin: 30px;
+    text-align: center;
+    font-size: 36px;
+    color: black;
+}
+
+h2{
+    border: 1px solid black;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    margin: 0px;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+section {
+    padding: 15px;
+    width: 100%;
+}
+
+div {
+    position: relative;
+    background-color: rgb(184, 175, 249);
+    border: 1px solid black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+
+/*Each section title region to some unique color*/
+.chicken {
+    background-color: rgb(250, 147, 181);
+}
+
+.beef {
+    background-color: red;
+}
+
+.sushi {
+    background-color: yellow;
+}
+
+
+.content {
+    border: none;
+    text-align: justify;
+    background-color: rgb(184, 175, 249);
+    font-family: Helvetica;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 40px;
+    height: auto;
+    clear: right;
+}
+
+.row {
+    width: 90%;
+}
+
+/*The browser display a desktop version of the site when the width of the browser window is 992px and above.*/
+@media (min-width: 992px) {
+    .column-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+
+/*Tablet view appear only if the width of the browser window is between 768px and 991px, inclusively. 
+The first 2 sections first row and equal size. The 3rd section second row and take up the entire row by itself.*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .colmn-md-6 {
+        float: left;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .colmn-md-12 {
+        float: left;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/*Mobile view appear only if the width of the browser is equal to or less than 767px.*/
+@media (max-width: 767px) {
+    .colmn-sm-12 {
+        float: left;
+        width: 100%;
+    }
+}
